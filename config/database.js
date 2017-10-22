@@ -1,3 +1,3 @@
-module.export = {
-  database: 'mogodb://localhost/udemyangularnodecms'
+module.exports = {
+  database: 'mongodb://localhost/udemyangularnodecms'
 }
