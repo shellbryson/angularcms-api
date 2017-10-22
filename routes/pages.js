@@ -5,5 +5,16 @@ const router = express.Router();
 
 const Page = require('../models/pages');
 
+/*
+ * Get all pages
+ */
+
+router.get('/', function(req, res) {
+  Page.find({}, function(err, pages) {
+    if (err) console.log(err);
+    res.json(pages);
+  });
+});
+
 // exports
 module.exports = router;
